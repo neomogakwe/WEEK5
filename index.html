@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="sccript.js"></script>
+
+    <div class="calculator">
+        <input type="text" id="inputbox" placeholder="0" readonly>
+    <div class="button">
+        <div>
+            <button  class="side-button"  onclick="acBtnPressed() ">AC</button>
+            <button class="side-button" onclick="deleteLast()">DEL</button>
+                <button class="side-button" onclick="percentBtnPressed()">%</button>
+            <button  class="operator-button" onclick="calculate('/')">/</button>
+        </div>
+        
+        <div>
+            <button data-number="7" class="digit-button" onclick="digitBtnPressed(7)">7</button>
+            <button data-number="8" class="digit-button" onclick="digitBtnPressed(8)">8</button>
+            <button data-number="9" class="digit-button" onclick="digitBtnPressed(9)">9</button>
+            <button data-number="*" class="operator-button"onclick="operatorBtnPressed('*')">*</button>
+            </div>
+
+        
+         <div>
+            <button data-number="4" class="digit-button" onclick="digitBtnPressed(4)">4</button>
+            <button data-number="5" class="digit-button" onclick="digitBtnPressed(5)">5</button>
+            <button data-number="6" class="digit-button" onclick="digitBtnPressed(6)">6</button>
+            <button data-operator="-" class="operator-button" onclick="operatorBtnpressed('-')" >-</button>
+            </div>
+
+        <div>
+            <button data-number="1" class="digit-button" onclick="digitBtnPressed(1)">1</button>
+            <button data-number="2" class="digit-button" onclick="digitBtnPressed(2)">2</button>
+            <button data-number="3" class="digit-button" onclick="digitBtnPressed(3)">3</button>
+            <button data-operator="+"class="operator-button" onclick="operatorBtnPressed('+')">+</button>
+            
+        </div>
+
+         <div>
+            <button data-number="0" class="digit-button" onclick="digitBtnPressed(0)">0</button>
+            <button data-number="," class="digit-button"  onclick="decimalBtnPressed()" >.</button>
+            <button data-number="=" class="operator-button" id="equals" onclick="equalsBtnPressed()">=</button>
+         </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
